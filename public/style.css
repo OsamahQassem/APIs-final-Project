@@ -1,0 +1,32 @@
+body{
+    padding: 0 px;
+    margin: 0 px;
+    background-image:url(https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/film-stripe-or-film-reel-on-shiny-purple-movie-background-10_G18h1Fj__SB_PM.jpg) ;
+    background-size: cover;
+}
+.footer{
+   
+    min-height: 11vh;
+    background-color: black;
+   
+    
+}
+.navbar{
+    background-color: black;
+}
+/* .navbar-toggler-icon{
+   
+    background-color: aliceblue;
+  
+} */
+
+.container{
+    min-height:80vh;
+}
+
+.show-img-place-holder{
+    background-color:gray;
+    max-width: fit-content;
+
+}
+
