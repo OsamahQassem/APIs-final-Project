@@ -1,7 +1,7 @@
 
 const url = 'https://api.tvmaze.com/shows';
 
-async function getData(){
+export async function getData(){
 try {
     const response = await fetch(url);
     const data = await response.json();
@@ -20,17 +20,18 @@ function printData(data){
  const content = document.querySelector('#content');
  content.innerHTML = `
    <h2>Find Out </h2>
-   <select class= "form-control" onchange = "${getDetails(this.value)}">
+   <select class= "form-control">
    <option>pleas select</option>
    ${data.map((shows) => `<option value ="${shows.id}">${shows.name}</option>`)}
    </select>
 `
+content.querySelector('select.form-control').onchange = getDetails;
 };
 
 
 
-async function getDetails(showId){
-    const response = await fetch(`${url}/${showId}`)
+async function getDetails(e){
+    const response = await fetch(`${url}/${e.target.value}`)
     const data = await response.json();
 
     const showDetails = document.querySelector('#content');

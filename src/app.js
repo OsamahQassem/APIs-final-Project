@@ -1,8 +1,8 @@
-// import {getData} from "./api.js";
+import {getData} from "./api.js";
 
 
-// const loadApp = () => {
-//     getData(); 
-// }
+const loadApp = () => {
+    getData(); 
+}
 
-// window.addEventListener('load',loadApp);
+window.addEventListener('load',loadApp);
